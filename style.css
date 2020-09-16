@@ -1,0 +1,86 @@
+/* Font Import */
+
+/* Color Definitions */
+:root {
+    --color-main: #074F57;
+    --color-secondary: #70A0AF;
+    --color-tertiary: #FDEBC3;
+    --color-quad: #73291C;
+
+}
+
+html {
+    font-size: 16px;
+}
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+}
+
+header,
+footer {
+    background-color: var(--color-main, teal);
+    padding: 0em 2em;
+    color: var(--color-tertiary, wheat);
+}
+
+h1 {
+    font-size: 3.052em;
+    line-height: 3em;
+    display: inline-block;
+    margin: 0em;
+}
+
+header {
+    max-height: 10em;
+    width: auto;
+}
+
+header img {
+    max-width: 30%;
+    float: right;
+    margin-top: 5em;
+    margin-bottom: -2em;
+    border-radius: 2em;
+    box-shadow: rgba(0, 0, 0, 0.315) .45em .5em;
+}
+
+main {
+    background-color: var(--color-tertiary, wheat);
+    min-height: 70vh;
+    height: auto;
+    padding: 1.5em 2em;
+}
+
+main h2 {
+    margin: 0em;
+    color: var(--color-secondary, lightblue);
+    font-size: 2.441em;
+    line-height: 3em;
+}
+
+main p,
+main ul {
+    font-size: 1.25em;
+    font-weight: 800;
+    color: var(--color-quad, brown);
+}
+
+main ul li a {
+    color: var(--color-secondary, lightblue);
+    padding-left: .25em;
+}
+
+main ul li a:hover {
+    color: var(--color-main, teal);
+    padding-left: .25em;
+}
+
+
+footer {
+    margin: 0em;
+    padding: 1em;
+    text-align: center;
+}
