@@ -42,9 +42,8 @@ h1 {
 }
 
 header img {
-    max-width: 30%;
     float: right;
-    margin-top: 5em;
+    margin-top: 2.5em;
     border-radius: 2em;
     box-shadow: rgba(0, 0, 0, 0.315) .45em .5em;
 }
