@@ -7,6 +7,7 @@
     --color-secondary: #da6c58;
     --color-tertiary: #FDEBC3;
     --color-quad: #73291C;
+    --shadow: rgba(0, 0, 0, 0.315);
 
 }
 
@@ -14,10 +15,14 @@ html {
     font-size: 16px;
     margin: 0px;
     padding: 0px;
+    background-color: #c7c7c7;
 }
 
 body{
-    margin: 0px 10vw;
+    margin: 0em 10vw;
+    box-shadow: var(--shadow) .5em .5em;
+    border-bottom-left-radius: 2em;
+    border-bottom-right-radius: 2em;
 }
 
 header,
@@ -45,7 +50,7 @@ header img {
     float: right;
     margin-top: 2.5em;
     border-radius: 2em;
-    box-shadow: rgba(0, 0, 0, 0.315) .45em .5em;
+    box-shadow: var(--shadow) .5em .5em;
 }
 
 main {
@@ -94,6 +99,8 @@ footer {
     text-align: center;
     font-family: 'Lato', sans-serif;
     font-weight: 900;
+    border-bottom-left-radius: inherit;
+    border-bottom-right-radius: inherit;
 }
 
 footer a {
