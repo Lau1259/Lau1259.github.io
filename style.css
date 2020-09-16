@@ -95,3 +95,6 @@ footer {
 footer a {
     color: var(--color-secondary, cyan);
 }
+footer a:hover {
+    color: white;
+}
