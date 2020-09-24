@@ -10,6 +10,7 @@
   --heading-font: Lobster;
   --body-font: Lato;
 }
+
 /* Small View */
 header,
 footer {
@@ -70,10 +71,12 @@ h2 {
   padding: 1vh 0vw;
   color: black;
 }
-.screenshot img{
+
+.screenshot img {
   width: 250px;
   height: auto;
 }
+
 /* Medium View */
 @media screen and (min-width:750px) {
   .designs {
@@ -85,18 +88,18 @@ h2 {
   .designPrinciple {
     display: grid;
     border-radius: 2.5em;
-    grid-template-columns: repeat(3,1fr);
+    grid-template-columns: repeat(3, 1fr);
     grid-template-rows: auto;
   }
 
   .designTitle {
-    grid-row: 1;
+    grid-row: 2;
   }
 
   .screenshot {
     display: flex;
     flex-direction: column;
-    grid-row: 2;
+    grid-row: 1;
     font-size: .75em;
   }
 
@@ -104,26 +107,26 @@ h2 {
     width: 30vw;
     height: auto;
     margin: 0px 0px;
-    margin-bottom: 1em;
   }
-
+figcaption{
+  padding: 1em 0em;
+}
   .designDescription {
     grid-row: 3;
+    line-height: 1.5em;
   }
 }
+
 /* Large View */
 @media screen and (min-width:1050px) {
   .designs {
     column-fill: auto;
     columns: 3 20vw;
-    column-gap: 5em;
+    column-gap: 3em;
     column-rule: var(--color-main, teal) solid .25em;
     margin: 3vh 0vw;
   }
 
-  .designPrinciple {
-    text-align: center;
-  }
 
   .screenshot img {
     height: auto;
