@@ -25,6 +25,9 @@ footer {
   color: var(--color-tertiary);
   min-height: 8vh;
 }
+footer{
+  font-family: var(--body-font, sanserif);
+}
 
 .logo {
   font-family: var(--heading-font, cursive);
