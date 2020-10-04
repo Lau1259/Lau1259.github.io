@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Merriweather+Sans&display=swap');
+
+header{
+  display: flex;
+  flex-direction: column;
+  color: #2364aaff;
+  align-items: center;
+  min-height: 8vh;
+}
+nav{
+  background-color: #2364aaff;
+  width: 100%;
+}
+header ul{
+  list-style: none;
+  text-align: center;
+  padding-left: 0px;
+}
+header ul li{
+  padding: .5em;
+}
+header ul a{
+  padding-left: 0px;
+  color: #fff;
+  font-family: 'Bree Serif', Calibri, serif;
+  font-size: 1.2em;
+}
+#logo {
+  margin:0px;
+  padding: 0px;
+}
+main{
+  margin: 2.5em auto;
+  width: 90%;
+  max-width: 1024px;
+  font-family: 'Merriweather Sans', sans-serif;
+  letter-spacing: 1px;
+}
+h1,h2{
+  font-family: 'Bree Serif', Calibri, serif;
+}
+footer{
+  background-color: #2364aaff;
+  color: #fff;
+  padding: 1.5em;
+  font-family: 'Merriweather Sans', sans-serif;
+  text-align: center;
+}
+footer a{
+  color: #ea7317ff;
+}
+@media screen and (min-width:700px) {
+  header{
+    flex-direction: row;
+  }
+  nav{
+    background-color: #fff;
+  }
+  header ul{
+    display: flex;
+    justify-content: space-around;
+  }
+  header ul a{
+    background-color: #2364aaff;
+    color: #fff;
+    border-radius: 1em;
+    padding: .35em .5em;
+    text-decoration: none;
+  }
+  header ul a:hover{
+    background-color: #2364aaff;
+  }
+}
