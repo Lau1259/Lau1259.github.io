@@ -1,0 +1,43 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  header{
+    grid-template-columns: max-content 1fr;
+    margin: 0 10vw;
+  }
+
+  header button {
+    display: none;
+  }
+  #primaryNav{
+    display: block;
+    padding: 0 10vw;
+  }
+
+  nav{
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: 100%;
+    justify-self: center;
+  }
+  nav ul{
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+  nav ul li{
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .nav-link{
+    padding: .8rem 1rem;
+  }
+
+  main {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+
+} /*end large */

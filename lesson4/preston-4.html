@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Cues | Home</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="getDate()">
+  <header>
+    <a class="logo-box" href="index.html"><img src="images/Logo.png" height="100px"></a>
+    <div class="company">
+      <h2>Weather Cues</h2>
+      <p>Your daily dose of sunshine</p>
+    </div>
+    <button onclick="toggleMenu()">&#9776;</button>
+
+    <nav id="primaryNav" class="hidden">
+      <ul>
+        <li><a class="nav-link" href="../lesson3/index.html">Home</a></li>
+        <li class="active"><a class="nav-link" href="index.html">Preston</a></li>
+        <li><a class="nav-link" href="#">Soda Springs</a></li>
+        <li><a class="nav-link" href="#">Fish Haven</a></li>
+        <li><a class="nav-link" href="#">Storm Center</a></li>
+        <li><a class="nav-link" href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Preston Idaho</h1>
+    <div class="hero">
+      <img src="https://via.placeholder.com/1800x400?text=Hero Image Placeholder" alt="Hero image placeholder">
+      <div class="hero-text">
+        <h3>Weather Summary</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam magnam, dolore temporibus dignissimos unde
+          voluptates nam porro mollitia ipsam excepturi consequuntur libero et reiciendis nisi ab ea ipsum distinctio
+          assumenda ratione. Reprehenderit, aut voluptatibus pariatur iusto excepturi totam aliquid eius quod delectus
+          ut
+          quidem est, quam cumque ea incidunt sint non.</p>
+      </div>
+    </div>
+    <section>
+      <div class="five-day">
+        <img src="https://via.placeholder.com/200/73bfb8?text=1" alt="Day One">
+        <img src="https://via.placeholder.com/200/fec601?text=2" alt="Day Two">
+        <img src="https://via.placeholder.com/200/ea7317?text=3" alt="Day Three">
+        <img src="https://via.placeholder.com/200/73bfb8?text=4" alt="Day Four">
+        <img src="https://via.placeholder.com/200/2364aa?text=5" alt="Day Five">
+      </div>
+      <article>
+        <h2>Article Title</h2>
+        <div class="content clearfix">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam dolor commodi repellat libero voluptatem
+            voluptatibus praesentium debitis excepturi, quae porro corporis quibusdam eaque necessitatibus quis ea
+            perspiciatis! Dolorem labore sunt perspiciatis error voluptatum placeat id, fugiat eos exercitationem, rerum
+            pariatur repudiandae accusantium? Aut aspernatur culpa nesciunt cum, iure at.</p>
+          <img class="box" src="https://via.placeholder.com/400x150?text=Article Image" alt="Image placeholder">
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <img>
+    <div class="contact-information">
+      <h3>Contact Information</h3>
+      <p><a href="mailto:weathercues@info.com">&#128231; Weather Cues</a></p>
+      <p><a href="tel:+1 123 456-7891"> &#128241; 123 456-7891 </a></p>
+    </div>
+    <img class="footer-map" src="https://via.placeholder.com/400x150?text=Map" alt="Map placeholder">
+    <div class="footer-bar">
+      <div id="date" class="footer-bar">Today is </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

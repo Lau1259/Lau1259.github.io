@@ -1,0 +1,18 @@
+#primary{
+  background-color: #2364aaff;
+}
+#secondary{
+  background-color: #73bfb8ff;
+}
+#highlight1{
+  background-color: #fec601ff;
+}
+#highlight2{
+  background-color: #ea7317ff;
+}
+table{
+  width: 80%;
+  margin: 0px auto;
+  height: 30vh;
+  text-align: center;
+}
