@@ -79,7 +79,8 @@ nav ul li.active a {
   background-color: rgba(0, 0, 0, .2);
   color: #ffffff;
 }
-h1{
+
+h1 {
   color: #2364aaff;
   padding-left: 2%;
 }
@@ -88,47 +89,60 @@ h1{
   max-width: 100%;
 }
 
-.five-day{
+.five-day {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
 }
 
-img{
+img {
   width: 100%;
 }
 
-.hero-text, article, footer{
+.hero-text,
+article,
+footer {
   padding: 2em;
 }
-section,.five-day{
+
+.hero-text ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+section,
+.five-day {
   border: 1px solid #000000;
 }
 
-.five-day, footer{
+.five-day,
+footer {
   background-color: #73bfb8ff;
 }
 
-.five-day img{
+.five-day img {
   border: 1px solid rgba(0, 0, 0, .3);
   justify-self: center;
 }
-footer{
+
+footer {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
 }
-footer a{
+
+footer a {
   display: block;
   padding: .75rem;
   color: #000000;
 }
 
-.footer-bar{
+.footer-bar {
   color: #000000;
   margin-top: 1em;
   text-align: center;
 }
+
 .hidden {
   display: none;
 }
