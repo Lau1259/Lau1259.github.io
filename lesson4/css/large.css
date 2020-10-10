@@ -16,7 +16,6 @@
 
   #primaryNav {
     display: block;
-    padding: 0 10vw;
   }
 
   nav {
@@ -47,14 +46,13 @@
     margin: 0 auto;
   }
 
-
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
     background-color: #2364aaff;
     height: fit-content;
-    max-height: 40vh;
+    max-height: 30vh;
   }
 
   .hero img {
@@ -65,7 +63,7 @@
   .hero-text {
     grid-column: 1/2;
     grid-row: 1;
-    background: rgba(0, 0, 0, 0.4);
+    background: rgba(0, 0, 0, 0.75);
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
     margin-top: 1em;
@@ -77,15 +75,21 @@
 
   .hero-text h3 {
     margin: 0;
-    padding-top: 1.5em;
+    padding-top: 1em;
   }
 
   .hero-text li{
-    font-size: .75em;
+    font-size: 1em;
+    line-height: 3.5vh;
   }
 
   section{
-    margin: 1em 0;
+    margin: 3em 0;
+  }
+
+  footer{
+    padding-top: 1em;
+    font-size: 2vh;
   }
 
 }
