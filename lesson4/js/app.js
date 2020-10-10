@@ -35,7 +35,7 @@ function getSummary(){
     }
 
     document.getElementById('temperature').innerHTML = `Temperature: ${temp}&#8457;`
-    document.getElementById('temperature').innerHTML = `Precipitation: ${precipitation}%`
+    document.getElementById('precipitation').innerHTML = `Precipitation: ${precipitation}%`
     document.getElementById('wind').innerHTML = `Wind speed: ${wind} MPH`
     document.getElementById('traffic').innerHTML = `Traffic: ${traffic}`
 }
