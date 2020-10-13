@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    <Media Query Demo>
+  </title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/media.css">
+</head>
+
+<body onload="lastUpdate()">
+
+  <header>
+    <div class="logo"><img src="/lesson4/images/Logo.png"></div>
+    <nav>
+      <ul>
+        <li>Link 1</li>
+        <li>Link 2</li>
+        <li>Link 3</li>
+        <li><select name="nav-social" id="social">
+            <option value="Facebook"><a href="https://www.facebook.com">Facebook</a></option>
+            <option value="Instagram"><a href="https://www.instagram.com">Instagram</a></option>
+            <option value="Google"><a href="https://www.Google.com">Google</a></option>
+          </select>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>CSS Media Queries</h1>
+    <p class="article-info">by Lautaro Cuevas</p>
+    <p class="article-info" id="lastUpdated">Last updated: 10/12/2020</p>
+    <section class="banner">
+      <img src="/lesson4/images/hero.jpg">
+      <div class="banner-text">
+        <h2>Banner Demo</h2>
+        <p>If the screen is large enough I'll be on top of the image. Cool huh?</p>
+      </div>
+    </section>
+    <section class="questions">
+      <h2>So what do media queries do?</h2>
+      <p>Media queries allow users to change how a website styles objects depending on certain characteristics. One of the most common uses of media queries is for changing the layout of a website depending on what device you are viewing it from. It can also help increase accessibility by hiding parts that wouldn't be useful for those using screen readers or other accessibility tools. </p>
+
+      <h2>When should I use media queries?</h2>
+      <p>Media queries should be used whenever accessibility and consistency is desired (which should always be the case). It should be used when you want your content to have a consistent look and feel.</p>
+
+      <h2>How should I use media queries?</h2>
+      <p>Using media queries requires understanding the content you're presenting. Media queries should not conform to the latest hardware due to the constant changes. Media queries should be used as a tool to present your information in the best way possible on whatever medium it is on.</p>
+      <p>Some of the best situation for media queries include the following: </p>
+      <ul>
+        <li>Style your content for mobile screens.</li>
+        <li>Style your content for printers. This is a great time to use them to hide banners, ads, and other unnecessary information. </li>
+        <li>When parts of your content would make your site harder to use for those using accessibility tools.</li>
+      </ul>
+      <p>In closing, media queries should be used to make your content look good, be accessible, and look professional.</p>
+    </section>
+    <div id="top"><a href="#">Back to top</a></div>
+
+  </main>
+  <script src="js/app.js"></script>
+
+</body>
+
+</html>
