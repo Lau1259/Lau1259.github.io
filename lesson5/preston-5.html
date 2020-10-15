@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Cues | Home</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="main()">
+  <div id="banner" class="hidden">
+    <h2>Saturday = Preston Pancakes in the Park!</h2>
+    <p>9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
+  <header>
+    <a class="logo-box" href="preston-5.html">
+      <img src="images/Logo.png" height="100" alt="Weather Cues Logo">
+    </a>
+    <div class="company">
+      <h2>Weather Cues</h2>
+      <p>Your daily dose of sunshine</p>
+    </div>
+    <button onclick="toggleMenu()">&#9776;</button>
+
+    <nav id="primaryNav" class="hidden">
+      <ul>
+        <li><a class="nav-link" href="../lesson3/index.html">Home</a></li>
+        <li class="active"><a class="nav-link" href="preston-5.html">Preston</a></li>
+        <li><a class="nav-link" href="../lesson3/color-scheme.html">Color Scheme</a></li>
+        <li><a class="nav-link" href="../lesson3/typography.html">Typography</a></li>
+        <li><a class="nav-link" href="../lesson3/personas.html">Personas</a></li>
+        <li><a class="nav-link" href="#">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Preston Idaho</h1>
+    <div class="hero">
+      <img src="images/hero_300.jpg" alt="Hero image placeholder" width="300">
+      <div class="hero-text">
+        <h3>Weather Summary</h3>
+        <ul>
+          <li id="temperature">Temperature: </li>
+          <li id="wind">Wind Speed: </li>
+          <li id="precipitation">Precipitation : </li>
+          <li id="traffic">Traffic Rating: </li>
+        </ul>
+      </div>
+    </div>
+    <section>
+      <div class="five-day">
+        <img src="images/rain.jpg" alt="Rain">
+        <img src="images/sunny.jpg" alt="Sunny">
+        <img src="images/windy.jpg" alt="Windy">
+        <img src="images/cloudy.jpg" alt="Cloudy">
+        <img src="images/sunny.jpg" alt="Sunny">
+      </div>
+      <article>
+        <h2>Article Title</h2>
+        <div class="content clearfix">
+          <img src="images/450x150.jpg" alt="Image placeholder">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi nam dolor commodi repellat libero voluptatem
+            voluptatibus praesentium debitis excepturi, quae porro corporis quibusdam eaque necessitatibus quis ea
+            perspiciatis! Dolorem labore sunt perspiciatis error voluptatum placeat id, fugiat eos exercitationem, rerum
+            pariatur repudiandae accusantium? Aut aspernatur culpa nesciunt cum, iure at.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-information">
+      <h3>Contact Information</h3>
+      <p><a href="#">&#128231; Weather Cues</a></p>
+      <p><a href="#"> &#128241; 123 456-7891 </a></p>
+    </div>
+    <img class="footer-map" src="images/map.jpg" alt="Map placeholder">
+    <div class="footer-bar">
+      <div id="date" class="footer-bar">Today is </div>
+    </div>
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+
+</html>

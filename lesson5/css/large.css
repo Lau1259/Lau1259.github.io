@@ -1,0 +1,97 @@
+/* 64em is also 1028px when basefont is 16px */
+@media only screen and (min-width: 64rem) {
+  header {
+    grid-template-columns: 1fr max-content 1fr 1fr;
+    margin: auto;
+    box-shadow: none;
+  }
+
+  .logo-box{
+    grid-column: 2;
+  }
+
+  header button {
+    display: none;
+  }
+
+  #primaryNav {
+    display: block;
+  }
+
+  nav {
+    grid-column: 1/-1;
+    grid-row: 2;
+    width: 100%;
+    justify-self: center;
+  }
+
+  nav ul {
+    display: flex;
+    justify-items: center;
+    margin: 0 auto;
+    max-width: 1000px;
+  }
+
+  nav ul li {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .nav-link {
+    padding: .8rem 1rem;
+  }
+
+  main, footer{
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    background-color: #2364aaff;
+    height: fit-content;
+    max-height: 30vh;
+  }
+
+  .hero img {
+    grid-column: 1/-1;
+    grid-row: 1;
+  }
+
+  .hero-text {
+    grid-column: 1/2;
+    grid-row: 1;
+    background: rgba(0, 0, 0, 0.75);
+    border-top-left-radius: 2em;
+    border-top-right-radius: 2em;
+    margin-top: 1em;
+    color: #ffffff;
+    padding: 0 5vw;
+    justify-self: center;
+    font-size: 16pt;
+  }
+
+  .hero-text h3 {
+    margin: 0;
+    padding-top: 1em;
+  }
+
+  .hero-text li{
+    font-size: 1em;
+    line-height: 3.5vh;
+  }
+
+  section{
+    margin: 3em 0;
+  }
+
+  footer{
+    padding-top: 1em;
+    font-size: 2vh;
+  }
+
+}
+
+/*end large */
