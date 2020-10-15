@@ -41,8 +41,8 @@ function getSummary(){
     document.getElementById('traffic').innerHTML = `Traffic: ${traffic}`
 }
 
-function doBanner(){
-    if (new Date().getDay() == "5"){
+function doBanner(data){
+    if (new Date().getDay() == "5" || data== true){
         document.getElementById('banner').classList.toggle('hidden');
     }
     document.documentElement.scrollTop = 0;

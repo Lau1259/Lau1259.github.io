@@ -6,7 +6,7 @@
     box-shadow: none;
   }
 
-  .logo-box{
+  .logo-box {
     grid-column: 2;
   }
 
@@ -41,7 +41,8 @@
     padding: .8rem 1rem;
   }
 
-  main, footer{
+  main,
+  footer {
     max-width: 1000px;
     margin: 0 auto;
   }
@@ -52,7 +53,6 @@
     justify-items: center;
     background-color: #2364aaff;
     height: fit-content;
-    max-height: 30vh;
   }
 
   .hero img {
@@ -78,16 +78,21 @@
     padding-top: 1em;
   }
 
-  .hero-text li{
+  .hero-text ul {
+    padding: 0;
+    list-style-type: none;
+  }
+
+  .hero-text li {
     font-size: 1em;
     line-height: 3.5vh;
   }
 
-  section{
+  section {
     margin: 3em 0;
   }
 
-  footer{
+  footer {
     padding-top: 1em;
     font-size: 2vh;
   }
