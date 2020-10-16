@@ -41,7 +41,7 @@ function getSummary(){
     document.getElementById('traffic').innerHTML = `Traffic: ${traffic}`
 }
 
-function doBanner(data){
+function doBanner(data = false){
     if (new Date().getDay() == "5" || data== true){
         document.getElementById('banner').classList.toggle('hidden');
     }
