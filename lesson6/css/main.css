@@ -1,0 +1,165 @@
+body {
+  font-family: 'Merriweather Sans', Calibri, sans-serif;
+}
+
+#banner{
+  text-align: center;
+  background-color:  #ea7317ff;
+  padding: 2em;
+}
+
+#banner h2, #banner p{
+  margin: .5em;
+  color: #ffffff;
+}
+
+header {
+  display: grid;
+  position: sticky;
+  top:0;
+  grid-template-columns: 1fr 2fr 1fr;
+  grid-column-gap: .5em;
+  align-content: center;
+  height: fit-content;
+  background-color: #ffffff;
+  box-shadow: 2px 3px rgba(0, 0, 0, .4);
+}
+
+h1,
+h2,
+h3 {
+  font-family: 'Bree Serif', Cambria, serif;
+}
+
+.logo-box img {
+  max-height: 100%;
+  width: auto;
+}
+
+.company {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1vw;
+}
+
+.company h2 {
+  margin: 0;
+  font-size: 5vw;
+}
+
+.company p {
+  margin: 0;
+  font-size: 2.5vw;
+  font-style: italic;
+}
+
+header button {
+  margin: .2rem 4%;
+  background-color: transparent;
+  border: none;
+  font-size: 1.6rem;
+  color: #2364aaff;
+  text-align: center;
+}
+
+nav {
+  background-color: #2364aaff;
+  font-family: 'Merriweather Sans', Calibri, sans-serif;
+  font-size: 1.1em;
+  grid-column: 1/-1;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: .8rem 2%;
+  text-decoration: none;
+  color: #cad5d8;
+  border-top: 1px solid rgba(0, 0, 0, .3);
+}
+
+.nav-link:hover {
+  background-color: rgba(0, 0, 0, .4);
+}
+
+nav ul li.active a {
+  background-color: rgba(0, 0, 0, 0.685);
+  color: #ea7317ff;
+  font-weight: 900;
+}
+
+h1 {
+  color: #2364aaff;
+  padding-left: 2%;
+}
+
+.hero picture {
+  max-width: 100%;
+}
+
+.five-day {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+}
+
+img {
+  width: 100%;
+}
+
+.hero-text,
+article,
+footer {
+  padding: 2em;
+}
+
+
+section,
+.five-day {
+  border: 1px solid #000000;
+}
+
+.five-day,
+footer {
+  background-color: #73bfb8ff;
+}
+
+.five-day img {
+  border: 1px solid rgba(0, 0, 0, .3);
+  justify-self: center;
+}
+
+footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+
+footer a {
+  display: block;
+  padding: .75rem;
+  color: #000000;
+}
+
+.footer-bar {
+  color: #000000;
+  margin-top: 1em;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/*----- Clearfix: Force an Element not to collapse -----*/
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
