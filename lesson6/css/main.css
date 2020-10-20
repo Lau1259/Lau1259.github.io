@@ -108,6 +108,10 @@ h1 {
   grid-template-columns: repeat(5, 1fr);
   justify-content: center;
 }
+.five-day h2{
+  text-align: center;
+  background-color: #73bfb8ff;
+}
 
 img {
   width: 100%;
