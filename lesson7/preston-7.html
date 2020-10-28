@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Cues | Home</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="main()">
+  <div id="banner" class="hidden">
+    <h2>Saturday = Preston Pancakes in the Park!</h2>
+    <p>9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
+  <header>
+    <a class="logo-box" href="../lesson6/preston-6.html">
+      <img src="images/Logo.png" height="100" alt="Weather Cues Logo">
+    </a>
+    <div class="company">
+      <h2>Weather Cues</h2>
+      <p>Your daily dose of sunshine</p>
+    </div>
+    <button onclick="toggleMenu()">&#9776;</button>
+
+    <nav id="primaryNav" class="hidden">
+      <ul>
+        <li><a class="nav-link" href="../lesson3/index.html">Home</a></li>
+        <li><a class="nav-link" href="../lesson6/preston-6.html">Preston</a></li>
+        <li><a class="nav-link" href="#">Soda Springs</a></li>
+        <li><a class="nav-link" href="#">Fish Haven</a></li>
+        <li><a class="nav-link" href="#">Storm Center</a></li>
+        <li class="active"><a class="nav-link" href="preston-7.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Weather Cues Gallery</h1>
+  <div class="img-container">
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/felix-MsTLo0kux1c-unsplash.jpg" alt="Dense fog over the mountain.">
+      <p>Dense fog in the mountains.</p>
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/jeremy-bishop-1GJnLJjQ9sg-unsplash.jpg" alt="Lake on a sunny day.">
+      <p>Lake on a sunny day.</p>
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/laila-gebhard-duXCrgV-Y6s-unsplash.jpg" alt=" Mountain tops on a clear day">
+      <p>Mountain tops on a clear day.</p>
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/matthew-t-rader-9aUG99x8LY4-unsplash.jpg" alt="Barn on a clear day.">
+      <p>Sunny day on the country side.</p>
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/osman-rana-GXEZuWo5m4I-unsplash.jpg" alt="Woman with an umbrella on a snowy day.">
+      <p>Light snow fall in the city.</p>
+    </picture>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/osman-rana-HOtPD7Z_74s-unsplash.jpg" alt="Snow fall on the city streets.">
+      <p>Heavier snow fall in the city. </p>
+    </picture>
+  </div>
+</main>
+  <footer>
+    <div class="contact-information">
+      <h3>Contact Information</h3>
+      <p><a href="#">&#128231; Weather Cues</a></p>
+      <p><a href="#"> &#128241; 123 456-7891 </a></p>
+    </div>
+    <img class="footer-map"  src="images/map.jpg" alt="Map placeholder">
+    <div class="footer-bar">
+      <div id="date" class="footer-bar">Today is </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfont_loader.js"></script>
+  <script src="js/windchill.js" defer></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/iobserver.js" defer></script>
+</body>
+
+</html>

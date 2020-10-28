@@ -26,7 +26,3 @@ if('IntersectionObserver' in window) {
     loadImages(img);
   });
 }
-
-function hide(){
-  document.getElementById('notice').style.display = "none";
-}
