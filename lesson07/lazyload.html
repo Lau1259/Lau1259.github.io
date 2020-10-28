@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lautaro Cuevas | Lazy Loading | WDD 230</title>
+  <link rel="stylesheet" href="css/lazy.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lazy Loading Demo</h1>
+  </header>
+  <div id="notice" onclick="hide()">
+    <p>All images presented here are from <a href="https://www.unsplash.com">Unsplash.com</a></p>
+  </div>
+
+  <article>
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/neon_city.jpg" alt="Placeholder image." width="300"
+        height="400">
+    </picture>
+
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/neon_bridge.jpg" alt="Placeholder image." width="300"
+        height="400">
+    </picture>
+
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/fire.jpg" alt="Placeholder image." width="300" height="400">
+    </picture>
+
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/feather.jpg" alt="Placeholder image." width="300" height="400">
+    </picture>
+
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/italia.jpg" alt="Placeholder image." width="300" height="400">
+    </picture>
+
+    <picture>
+      <img src="images/placeholder.jpg" data-src="images/rose.jpg" alt="Placeholder image." width="300" height="400">
+    </picture>
+  </article>
+  <script src="js/iobserver.js" defer></script>
+</body>
+
+</html>
