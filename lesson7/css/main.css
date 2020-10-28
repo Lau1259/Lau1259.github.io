@@ -186,7 +186,7 @@ footer a {
   grid-gap: 1em;
 }
 
-picture p{
+.img-box p{
   text-align: center;
 }
 
@@ -194,10 +194,10 @@ picture img[data-src] {
   filter: blur(0.3em);
 }
 
-picture img {
+.img-box img {
   filter: blur(0em);
   transition: filter 0.5s;
 }
-picture:hover{
+.img-box:hover{
   box-shadow: .15em .1em .85em;
 }
