@@ -103,7 +103,7 @@
   .img-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
+/* Hover only on large view */
   .img-box:hover {
     box-shadow: .15em .1em .85em;
   }
