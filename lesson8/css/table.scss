@@ -1,0 +1,84 @@
+// Font Imports
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+
+// Variable definitions
+$blue-bg: #e7f0ed;
+$blue-dark: #628ca6;
+$blue-mid: #7fb9c2;
+$green-bg: #e7ffed;
+
+// Type
+$font: Ubuntu,
+san-serif;
+
+//Borders
+$table-border: 1px solid #ccc;
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 50vw;
+  max-width: 800px;
+  margin: 2em auto;
+  border: $table-border;
+  box-shadow: .75em .75em 1em $blue-dark;
+}
+
+h1 {
+  background: $blue-mid;
+  text-align: center;
+  font-size: 3em;
+  font-family: $font;
+  padding: .25em 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5em;
+  border-spacing: 0;
+}
+
+tr th {
+  background: $blue-dark;
+  font-family: $font;
+  color: #fff;
+  border-spacing: 0;
+  border: $table-border;
+  padding: 0.5em;
+}
+
+tr{
+  background-color: $blue-bg;
+}
+
+tr:nth-child(odd){
+  background-color: $green-bg;
+}
+
+tr td {
+  font-family: $font;
+  text-align: center;
+  border: $table-border;
+  padding: .5em;
+}
+
+#highlight{
+  background: $blue-dark;
+  color: #fff;
+}
+
+tfoot {
+  background: $blue-mid;
+}
+
+tfoot td {
+  padding: 0.5em 0;
+  font-size: .75em;
+  font-weight: bold;
+  background-color: $blue-mid;
+}

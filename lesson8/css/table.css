@@ -1,0 +1,71 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic);
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  width: 50vw;
+  max-width: 800px;
+  margin: 2em auto;
+  border: 1px solid #ccc;
+  box-shadow: 0.75em 0.75em 1em #628ca6;
+}
+
+h1 {
+  background: #7fb9c2;
+  text-align: center;
+  font-size: 3em;
+  font-family: Ubuntu, san-serif;
+  padding: 0.25em 0;
+  margin: 0;
+}
+
+table {
+  width: 100%;
+  font-size: 1.5em;
+  border-spacing: 0;
+}
+
+tr th {
+  background: #628ca6;
+  font-family: Ubuntu, san-serif;
+  color: #fff;
+  border-spacing: 0;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+tr {
+  background-color: #e7f0ed;
+}
+
+tr:nth-child(odd) {
+  background-color: #e7ffed;
+}
+
+tr td {
+  font-family: Ubuntu, san-serif;
+  text-align: center;
+  border: 1px solid #ccc;
+  padding: 0.5em;
+}
+
+#highlight {
+  background: #628ca6;
+  color: #fff;
+}
+
+tfoot {
+  background: #7fb9c2;
+}
+
+tfoot td {
+  padding: 0.5em 0;
+  font-size: 0.75em;
+  font-weight: bold;
+  background-color: #7fb9c2;
+}
+
+/*# sourceMappingURL=table.css.map */
