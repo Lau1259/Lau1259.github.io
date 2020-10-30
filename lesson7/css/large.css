@@ -99,9 +99,14 @@
     padding-top: 1em;
     font-size: 2vh;
   }
-  .img-container{
+
+  .img-container {
     grid-template-columns: 1fr 1fr 1fr;
-    }
+  }
+
+  .img-box:hover {
+    box-shadow: .15em .1em .85em;
+  }
 
 }
 
