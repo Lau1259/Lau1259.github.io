@@ -6,17 +6,18 @@ html {
 }
 
 main {
-  width: 50vw;
-  max-width: 800px;
+  width: 80vw;
+  max-width: 500px;
   margin: 2em auto;
   border: 1px solid #ccc;
   box-shadow: 0.75em 0.75em 1em #628ca6;
 }
 
-h1 {
+caption {
   background: #7fb9c2;
   text-align: center;
-  font-size: 3em;
+  font-size: 1.5em;
+  font-weight: 800;
   font-family: Ubuntu, san-serif;
   padding: 0.25em 0;
   margin: 0;
