@@ -250,7 +250,6 @@ form label input:required:valid {
 }
 
 form #s-val {
-  color: #ea7317ff;
   font-weight: 800;
 }
 
@@ -278,7 +277,7 @@ form input.submitBtn {
 form input.submitBtn:hover {
   border-radius: 1.2rem;
   background-color: #2364aaff;
-  color: white;
+  color: #fff;
   font-size: 1.25em;
   font-family: 'Merriweather Sans', Calibri, sans-serif;
   font-weight: 800;
