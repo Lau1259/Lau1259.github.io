@@ -201,9 +201,12 @@ picture img[data-src] {
   transition: filter 0.5s;
 }
 
+.storm-head{
+  text-align: center;
+}
 /* Form Styles */
 form {
-  margin: .5em;
+  margin: 0 auto;
   width: auto;
 }
 
