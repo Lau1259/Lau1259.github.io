@@ -41,3 +41,29 @@ section:hover {
   border: goldenrod .25em inset;
   background-color: rgba(255, 255, 255, 0.596);
 }
+
+@media screen and (min-width: 35em) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  main{
+    margin: 1em;
+  }
+
+  section img{
+    max-width: 90%;
+  }
+}
+
+@media screen and (min-width: 64em) {
+  .cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+
+  section img{
+    max-width: 90%;
+  }
+}
