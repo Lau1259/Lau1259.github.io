@@ -186,6 +186,40 @@ footer {
   justify-self: center;
 }
 
+aside{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  color: #ffffff;
+  background-color: #2364aaff;
+  margin: 1em 0;
+}
+
+aside ul{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  text-align: center;
+  list-style-type: none;
+  border-top: .25em solid #ffffff;
+}
+aside li{
+  padding: 1em;
+}
+
+aside li:nth-child(even){
+  background-color: rgba(0, 0, 0, .5);
+}
+
+aside li:nth-child(odd){
+  background-color: rgba(0, 0, 0, .3);
+}
+
+aside a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
 footer {
   display: grid;
   grid-template-columns: 1fr;
@@ -202,6 +236,9 @@ footer a {
   color: #000000;
   margin-top: 1em;
   text-align: center;
+}
+.footer-bar a{
+  color: #ffffff;
 }
 
 .hidden {
