@@ -269,7 +269,7 @@ picture img[data-src] {
 
 .img-box img {
   filter: blur(0em);
-  transition: filter 0.7s5s;
+  transition: filter 0.7s;
 }
 
 .storm-head{
