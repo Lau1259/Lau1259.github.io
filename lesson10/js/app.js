@@ -66,7 +66,7 @@ function windChill(tempF, speed) {
 }
 
 function getImages() {
-  const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
+  const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
 
   fetch(apiURL)
     .then((response) => response.json())
