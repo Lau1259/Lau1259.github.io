@@ -34,8 +34,7 @@ function toggleMenu() {
 /* GET Summary */
 function getSummary() {
   //Using weather gives you current weather data
-  const apiURL = "js/preston.json"
-  // "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
+  const apiURL = "http://api.openweathermap.org/data/2.5/weather?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
 
   fetch(apiURL)
     .then((response) => response.json())
@@ -67,8 +66,7 @@ function windChill(tempF, speed) {
 }
 
 function getImages() {
-  const apiURL = "js/forecast.json"
-  // "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
+  const apiURL = "http://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
 
   fetch(apiURL)
     .then((response) => response.json())
