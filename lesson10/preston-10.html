@@ -43,9 +43,10 @@
     <h1>Preston Idaho</h1>
     <div class="hero">
       <picture>
-        <source media="(min-width: 64rem)" srcset="images/hero-64rem.jpg">
-        <source media="(min-width: 35rem)" srcset="images/hero-35rem.jpg">
-        <img src="images/hero-default.jpg" alt="Hero image placeholder">
+        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/hero-64rem.jpg">
+        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-35rem.jpg">
+        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-default.jpg">
+        <img src="images/hero.jpg"  alt="Hero image placeholder">
       </picture>
       <div class="hero-text">
         <h2>Weather Summary</h2>
@@ -63,35 +64,35 @@
       <div class="five-day">
         <h2>5 Day Forecast</h2>
         <figure>
-          <img id="day1" src="images/rain.jpg" alt="Rain">
+          <img id="day1" src="images/Weather-Icon.jpg" alt="Rain">
           <figcaption>
             <p id="day1-desc"></p>
             <p id="day1-temp"></p>
           </figcaption>
         </figure>
         <figure>
-          <img id="day2" src="images/windy.jpg" alt="Windy">
+          <img id="day2" src="images/Weather-Icon.jpg" alt="Windy">
           <figcaption>
             <p id="day2-desc"></p>
             <p id="day2-temp"></p>
           </figcaption>
         </figure>
         <figure>
-          <img id="day3" src="images/sunny.jpg" alt="Sunny">
+          <img id="day3" src="images/Weather-Icon.jpg" alt="Sunny">
           <figcaption>
             <p id="day3-desc"></p>
             <p id="day3-temp"></p>
           </figcaption>
         </figure>
         <figure>
-          <img id="day4" src="images/cloudy.jpg" alt="Cloudy">
+          <img id="day4" src="images/Weather-Icon.jpg" alt="Cloudy">
           <figcaption>
             <p id="day4-desc"></p>
             <p id="day4-temp"></p>
           </figcaption>
         </figure>
         <figure>
-          <img id="day5" src="images/sunny.jpg" alt="Sunny">
+          <img id="day5" src="images/Weather-Icon.jpg" alt="Sunny">
           <figcaption>
             <p id="day5-desc"></p>
             <p id="day5-temp"></p>
