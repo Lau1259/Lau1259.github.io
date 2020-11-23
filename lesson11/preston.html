@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Welcome to Weather Cues' site for preston Idaho. Get information on local weather as well as local activities.">
+  <title>Weather Cues | Home</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css" >
+  <link rel="stylesheet" href="css/large.css" media="(min-width: 35em")>
+</head>
+
+<body onload="main()">
+  <div id="banner" class="hidden">
+    <h2>Saturday = Preston Pancakes in the Park!</h2>
+    <p>9:00 a.m. Saturday at the city park pavilion.</p>
+  </div>
+  <header>
+    <a class="logo-box" href="index.html">
+      <img src="images/Logo.png" height="100" alt="Weather Cues Logo">
+    </a>
+    <div class="company">
+      <h2>Weather Cues</h2>
+      <p>Your daily dose of sunshine</p>
+    </div>
+    <button onclick="toggleMenu()">&#9776;</button>
+
+    <nav id="primaryNav" class="hidden">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="preston.html">Preston</a></li>
+        <li><a class="nav-link" href="construction.html">Soda Springs</a></li>
+        <li><a class="nav-link" href="construction.html">Fish Haven</a></li>
+        <li><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Preston Idaho</h1>
+    <div class="hero">
+      <picture>
+        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/hero-64rem.jpg">
+        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-35rem.jpg">
+        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-default.jpg">
+        <img src="images/hero.jpg"  alt="Hero image placeholder">
+      </picture>
+      <div class="hero-text">
+        <h2>Weather Summary</h2>
+        <ul>
+          <li id="temperature">Current temperature: </li>
+          <li id="tempHigh">High: </li>
+          <li id="tempLow">Low: </li>
+          <li id="humidity">Humidity: </li>
+          <li id="wind">Wind Speed: </li>
+          <li id="windchill">Wind Chill: </li>
+        </ul>
+      </div>
+    </div>
+    <section>
+      <div class="five-day">
+        <h2>5 Day Forecast</h2>
+        <figure>
+          <img id="day1" src="images/Weather-Icon.jpg" alt="Rain">
+          <figcaption>
+            <p id="day1-desc"></p>
+            <p id="day1-temp"></p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img id="day2" src="images/Weather-Icon.jpg" alt="Windy">
+          <figcaption>
+            <p id="day2-desc"></p>
+            <p id="day2-temp"></p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img id="day3" src="images/Weather-Icon.jpg" alt="Sunny">
+          <figcaption>
+            <p id="day3-desc"></p>
+            <p id="day3-temp"></p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img id="day4" src="images/Weather-Icon.jpg" alt="Cloudy">
+          <figcaption>
+            <p id="day4-desc"></p>
+            <p id="day4-temp"></p>
+          </figcaption>
+        </figure>
+        <figure>
+          <img id="day5" src="images/Weather-Icon.jpg" alt="Sunny">
+          <figcaption>
+            <p id="day5-desc"></p>
+            <p id="day5-temp"></p>
+          </figcaption>
+        </figure>
+      </div>
+      <article>
+        <h2>Christmas in the Park</h2>
+        <div class="content clearfix">
+          <img src="images/450x150.jpg" alt="Image placeholder">
+          <p>Christmas is just around the corner and we want your family to have the best holiday season. This year we will host Santa Claus himself everyday from December 1st until christmas. Also, make sure try a cup of hot cocoa while you're there. This year, our annual hot cocoa contest will be judged by you, so make sure to try a cup and vote for the best online.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="contact-information">
+      <h3>Contact Information</h3>
+      <p><a href="#">&#128231; Weather Cues</a></p>
+      <p><a href="#"> &#128241; 123 456-7891 </a></p>
+    </div>
+    <img class="footer-map" src="images/map.jpg" alt="Map placeholder">
+    <div class="footer-bar">
+      <div id="date" class="footer-bar">Today is </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfont_loader.js"></script>
+  <script src="js/app.js" defer></script>
+</body>
+
+</html>

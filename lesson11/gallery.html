@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Cues | Gallery</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body onload="main()">
+  <header>
+    <a class="logo-box" href="index.html">
+      <img src="images/Logo.png" height="100" alt="Weather Cues Logo">
+    </a>
+    <div class="company">
+      <h2>Weather Cues</h2>
+      <p>Your daily dose of sunshine</p>
+    </div>
+    <button onclick="toggleMenu()">&#9776;</button>
+
+    <nav id="primaryNav" class="hidden">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="preston.html">Preston</a></li>
+        <li><a class="nav-link" href="construction.html">Soda Springs</a></li>
+        <li><a class="nav-link" href="construction.html">Fish Haven</a></li>
+        <li><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
+        <li><a class="nav-link" href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Weather Cues Gallery</h1>
+    <div class="img-container">
+      <div class="img-box">
+        <picture>
+          <img src="images/placeholder.jpg" data-src="images/felix-MsTLo0kux1c-unsplash.jpg"
+            alt="Dense fog over the mountain.">
+        </picture>
+        <p>Dense fog in the mountains.</p>
+      </div>
+      <div class="img-box">
+        <picture>
+          <img src="images/placeholder.jpg" data-src="images/jeremy-bishop-1GJnLJjQ9sg-unsplash.jpg"
+            alt="Lake on a sunny day.">
+
+        </picture>
+        <p>Lake on a sunny day.</p>
+      </div>
+      <div class="img-box">
+        <picture>
+          <img src="images/placeholder.jpg" data-src="images/laila-gebhard-duXCrgV-Y6s-unsplash.jpg"
+            alt=" Mountain tops on a clear day">
+
+        </picture>
+        <p>Mountain tops on a clear day.</p>
+      </div>
+      <div class="img-box">
+        <picture>
+          <img src="images/placeholder.jpg" data-src="images/matthew-t-rader-9aUG99x8LY4-unsplash.jpg"
+            alt="Barn on a clear day.">
+
+        </picture>
+        <p>Sunny day on the country side.</p>
+      </div>
+      <div class="img-box">
+        <picture>
+          <img src="images/placeholder.jpg" data-src="images/osman-rana-GXEZuWo5m4I-unsplash.jpg"
+            alt="Woman with an umbrella on a snowy day.">
+
+        </picture>
+        <p>Light snow fall in the city.</p>
+      </div>
+      <div class="img-box">
+        <picture>
+          <img src="images/placeholder.jpg" data-src="images/osman-rana-HOtPD7Z_74s-unsplash.jpg"
+            alt="Snow fall on the city streets.">
+
+        </picture>
+        <p>Heavier snow fall in the city. </p>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <div class="contact-information">
+      <h2>Contact Information</h2>
+      <p><a href="#">&#128231; Weather Cues</a></p>
+      <p><a href="#"> &#128241; 123 456-7891 </a></p>
+    </div>
+    <img class="footer-map" src="images/map.jpg" alt="Map placeholder">
+    <div class="footer-bar">
+      <div id="date" class="footer-bar">Today is </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/webfont_loader.js"></script>
+  <script src="js/app.js" defer></script>
+  <script src="js/iobserver.js" defer></script>
+</body>
+
+</html>
