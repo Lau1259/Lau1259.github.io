@@ -80,7 +80,7 @@ function getImages(identifier) {
         if (jsObject.list[i].dt_txt.includes("18:00:00")) {
           // console.log(jsObject.list[i].dt_txt)
           let imageUrl = jsObject.list[i].weather[0].icon;
-          // console.log(imageUrl)
+          //console.log(imageUrl);
           let dTemp = jsObject.list[i].main.temp;
           let desc = jsObject.list[i].weather[0].description;
           // console.log(`Description: ${desc}`);

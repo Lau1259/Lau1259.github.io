@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/large.css" media="(min-width: 35em")>
 </head>
 
-<body onload="main(), townData('lat=42.0380399&lon=-111.4048681')">
+<body onload="main(), townData('lat=42.0380399&lon=-111.4048681'), townInfo(['Fish Haven'])">
   <header>
     <a class="logo-box" href="index.html">
       <img src="images/Logo.png" height="100" alt="Weather Cues Logo">
@@ -103,6 +103,11 @@
         </div>
       </article>
     </section>
+    <aside>
+      <h2>Local Events</h2>
+      <ul id="local-events">
+      </ul>
+    </aside>
   </main>
 
   <footer>
@@ -119,6 +124,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfont_loader.js"></script>
+  <script src="js/towns.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 

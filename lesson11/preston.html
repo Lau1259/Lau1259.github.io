@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/large.css" media="(min-width: 35em")>
 </head>
 
-<body onload="main(), townData('id=5604473')">
+<body onload="main(), townData('id=5604473'), townInfo(['Preston'])">
   <div id="banner" class="hidden">
     <h2>Saturday = Preston Pancakes in the Park!</h2>
     <p>9:00 a.m. Saturday at the city park pavilion.</p>
@@ -107,6 +107,11 @@
         </div>
       </article>
     </section>
+    <aside>
+      <h2>Local Events</h2>
+      <ul id="local-events">
+      </ul>
+    </aside>
   </main>
 
   <footer>
@@ -123,6 +128,7 @@
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfont_loader.js"></script>
+  <script src="js/towns.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 
