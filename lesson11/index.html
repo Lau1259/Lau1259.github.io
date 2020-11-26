@@ -13,7 +13,7 @@
   <link rel="stylesheet" href="css/large.css">
 </head>
 
-<body onload="main()">
+<body onload="main(), townInfo('home')">
   <header>
     <a class="logo-box" href="index.html">
       <img src="images/Logo.png" height="100" alt="Weather Cues Logo">
@@ -28,8 +28,8 @@
       <ul>
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="preston.html">Preston</a></li>
-        <li><a class="nav-link" href="construction.html">Soda Springs</a></li>
-        <li><a class="nav-link" href="construction.html">Fish Haven</a></li>
+        <li><a class="nav-link" href="sodasprings.html">Soda Springs</a></li>
+        <li><a class="nav-link" href="fishhaven.html">Fish Haven</a></li>
         <li><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
       </ul>
@@ -40,9 +40,10 @@
     <h1>Weather Cues</h1>
     <div class="hero">
       <picture>
-        <source media="(min-width: 64rem)" srcset="images/hero-64rem.jpg">
-        <source media="(min-width: 35rem)" srcset="images/hero-35rem.jpg">
-        <img src="images/placeholder_horizontal.jpg" data-src="images/hero-default.jpg" alt="Hero image placeholder">
+        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/hero-64rem.jpg">
+        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-35rem.jpg">
+        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-default.jpg">
+        <img src="images/hero.jpg"  alt="Hero image placeholder">
       </picture>
       <div class="hero-text">
         <h2>Welcome!</h2>
@@ -62,18 +63,18 @@
       </article>
       <article class="town-even">
         <div class="town-text">
-          <a href="construction.html" id="fish-haven"></a>
+          <a href="fishhaven.html" id="fish-haven"></a>
         </div>
-        <a href="construction.html">
+        <a href="fishhaven.html">
           <img src="images/placeholder_horizontal.jpg" data-src="images/fish_haven.jpg" alt="Fish Haven, Idaho">
         </a>
       </article>
 
       <article class="town-odd">
         <div class="town-text">
-          <a href="construction.html"  id="soda-springs"></a>
+          <a href="sodasprings.html"  id="soda-springs"></a>
         </div>
-        <a href="construction.html">
+        <a href="sodasprings.html">
           <img src="images/placeholder_horizontal.jpg" data-src="images/soda_springs.jpg" alt="Soda Springs, Idaho">
         </a>
 
@@ -82,7 +83,7 @@
 
     <aside>
       <h2>Local Events</h2>
-      <ul>
+      <ul id="local-events">
        <li><a href="#">November 27, 2020 Thanksgiving Concert</a></li>
        <li><a href="#">December 5, 2020 Christmas in the Park Opening day</a></li>
        <li><a href="#">December 10,2020 Christmas Food Drive</a></li>

@@ -1,8 +1,11 @@
 function main() {
   doBanner();
   getDate();
-  getSummary();
-  getImages();
+}
+
+function townData(identifier) {
+  getSummary(identifier);
+  getImages(identifier);
 }
 
 /* Footer Date */
@@ -27,14 +30,13 @@ function doBanner(data = false) {
 }
 
 function toggleMenu() {
-  console.log(document.getElementById('primaryNav').classList)
   document.getElementById('primaryNav').classList.toggle('hidden')
 }
 
-/* GET Summary */
-function getSummary() {
+/* GET weather data */
+function getSummary(identifier) {
   //Using weather gives you current weather data
-  const apiURL = "https://api.openweathermap.org/data/2.5/weather?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
+  const apiURL = `https://api.openweathermap.org/data/2.5/weather?${identifier}&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial`;
 
   fetch(apiURL)
     .then((response) => response.json())
@@ -65,8 +67,8 @@ function windChill(tempF, speed) {
   return f.toFixed(2)
 }
 
-function getImages() {
-  const apiURL = "https://api.openweathermap.org/data/2.5/forecast?id=5604473&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial";
+function getImages(identifier) {
+  const apiURL = `https://api.openweathermap.org/data/2.5/forecast?${identifier}&appid=703bf38fa0ac6aec6fd04dd0b7e37720&units=imperial`;
 
   fetch(apiURL)
     .then((response) => response.json())
@@ -88,20 +90,20 @@ function getImages() {
           // console.log(i, `day: ${day}`);
           document.getElementById(`day${day}`).setAttribute('src', imagesrc);
           document.getElementById(`day${day}`).setAttribute('alt', dTemp);
-          document.getElementById(`day${day}-desc`).textContent= `${titleCase(desc)}`;
-          document.getElementById(`day${day}-temp`).textContent= `${dTemp} \u2109`;
-          day ++;
+          document.getElementById(`day${day}-desc`).textContent = `${titleCase(desc)}`;
+          document.getElementById(`day${day}-temp`).textContent = `${dTemp} \u2109`;
+          day++;
         }
       }
     });
 }
 
-function titleCase(str){
+function titleCase(str) {
   str = str.toLowerCase().split(" ")
-  for (let i = 0; i<str.length; i++){
-    str[i] = str[i].charAt(0).toUpperCase()+ str[i].slice(1)
+  for (let i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1)
   }
-  str= str.join(" ")
+  str = str.join(" ")
   return str
 }
 
@@ -114,10 +116,10 @@ const loadHero = (image) => {
   };
 };
 
-if('IntersectionObserver' in window) {
+if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
-      if(item.isIntersecting) {
+      if (item.isIntersecting) {
         loadHero(item.target);
         observer.unobserve(item.target);
       }
