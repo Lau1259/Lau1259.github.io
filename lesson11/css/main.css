@@ -335,7 +335,7 @@ aside{
   align-items: center;
   justify-items: center;
   color: #ffffff;
-  background-color: #2364aaff;
+  background-color:#2364aaff;
   margin: 1em 0;
 }
 /* Local Events List */
@@ -349,14 +349,15 @@ aside ul{
 }
 aside li{
   padding: 1em;
+  color: #000000;
 }
 
 aside li:nth-child(even){
-  background-color: rgba(0, 0, 0, .1);
+  background-color: rgba(250, 250, 250, .4);
 }
 
 aside li:nth-child(odd){
-  background-color: rgba(250, 250, 250, .1);
+  background-color: rgba(250, 250, 250, .2);
 }
 
 aside a{
@@ -364,6 +365,12 @@ aside a{
   text-decoration: none;
 }
 
+
+aside li:hover{
+  background-color: #ea7317ff;
+}
+
 aside li.townName{
-  background-color: rgba(0, 0, 0, .5);
+  background-color:#2364aaff;
+  color: #fff;
 }
