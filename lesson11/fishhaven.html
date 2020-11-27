@@ -4,12 +4,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to Weather Cues' site for preston Idaho. Get information on local weather as well as local activities.">
+  <meta name="description"
+    content="Welcome to Weather Cues' site for preston Idaho. Get information on local weather as well as local activities.">
   <title>Weather Cues | Home</title>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/medium.css" >
-  <link rel="stylesheet" href="css/large.css" media="(min-width: 35em")>
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css" media="(min-width: 35em" )>
 </head>
 
 <body onload="main(), townData('lat=42.0380399&lon=-111.4048681'), townInfo(['Fish Haven'])">
@@ -28,7 +29,7 @@
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="preston.html">Preston</a></li>
         <li><a class="nav-link" href="sodasprings.html">Soda Springs</a></li>
-        <li><a class="nav-link" href="construction.html">Fish Haven</a></li>
+        <li class="active"><a class="nav-link" href="fishhaven.html">Fish Haven</a></li>
         <li><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
       </ul>
@@ -39,10 +40,10 @@
     <h1>Fish Haven, Idaho</h1>
     <div class="hero">
       <picture>
-        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/hero-64rem.jpg">
-        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-35rem.jpg">
-        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-default.jpg">
-        <img src="images/hero.jpg"  alt="Hero image placeholder">
+        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/fish_haven_64rem.jpg">
+        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/fish_haven_35rem.jpg">
+        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/fish_haven_default.jpg">
+        <img src="images/hero.jpg" alt="Hero image placeholder">
       </picture>
       <div class="hero-text">
         <h2>Weather Summary</h2>
@@ -96,10 +97,13 @@
         </figure>
       </div>
       <article>
-        <h2>Christmas in the Park</h2>
+        <h2>Winter Fishing 2020</h2>
         <div class="content clearfix">
-          <img src="images/450x150.jpg" alt="Image placeholder">
-          <p>Christmas is just around the corner and we want your family to have the best holiday season. This year we will host Santa Claus himself everyday from December 1st until christmas. Also, make sure try a cup of hot cocoa while you're there. This year, our annual hot cocoa contest will be judged by you, so make sure to try a cup and vote for the best online.</p>
+          <img src="images/loading.jpg" data-src="images/fishing.jpg" alt="Man fishing on a lake.">
+          <p>Do you get more days off of work during the holiday season? If you do, then don't miss out on some of the
+            coolest (no pun intended) fishing events this year. Make sure to stop by bear lake to try your hand at ice
+            fishing. Just make sure to get your fishing license early. When that's ready remember to take warm clothes
+            and you're ready for a great day outdoors.</p>
         </div>
       </article>
     </section>
@@ -118,13 +122,16 @@
     </div>
     <img class="footer-map" src="images/map.jpg" alt="Map placeholder">
     <div class="footer-bar">
-      <div id="date" class="footer-bar">Today is </div>
+      <p id="date">Today is </p>
+      <p class="footer-text">&copy;2020 created by Lautaro Cuevas | <span id="lastUpdate">Last updated: dd//mm/yyyy</span> |</p>
+      <p class="footer-text"><a href="home-wireframes.html">WeatherCues Home Wireframes</a></p>
     </div>
   </footer>
   <!-- Scripts -->
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfont_loader.js"></script>
   <script src="js/towns.js" defer></script>
+  <script src="js/iobserver.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 

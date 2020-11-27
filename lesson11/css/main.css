@@ -112,6 +112,7 @@ h1 {
   grid-gap: .5em;
   padding-bottom: .5em;
 }
+
 .five-day h2{
   text-align: center;
   background-color: rgba(0, 0, 0, .1);
@@ -164,6 +165,7 @@ footer {
   display: grid;
   grid-template-columns: 1fr;
   justify-content: center;
+  font-size: .75em;
 }
 
 footer a {
@@ -172,9 +174,29 @@ footer a {
   color: #000000;
 }
 
+.footer-text{
+  color: #fff;
+  line-height: 2em;
+}
+
+.footer-text a{
+  display: inline;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  color: #fff;
+  padding: .5em 1em;
+  border-radius: 2em;
+  transition: .25s;
+}
+.footer-text a:hover{
+  background-color: transparent;
+  box-shadow: 0px 0px 0px 2px #fff;
+}
+
 .footer-bar {
   color: #000000;
   margin-top: 1em;
+  padding-bottom:2em;
   text-align: center;
 }
 
@@ -213,18 +235,19 @@ form div {
   display: block;
   padding: 0;
   margin: 0 auto;
-  margin-bottom: .5em;
+  margin-bottom: 1em;
   width: 88%;
 }
 
 form textarea {
   width: 100%;
-  margin: 0;
   padding: 0;
+  border: solid 2px;
 }
 
 form input {
   width: 100%;
+  border-style: solid;
 }
 
 form label input:required {
@@ -240,7 +263,6 @@ form label input:required:valid {
 form #s-val {
   font-weight: 800;
 }
-
 
 form label.sbs {
   float: left;
@@ -260,6 +282,7 @@ form input.submitBtn {
   font-family: 'Merriweather Sans', Calibri, sans-serif;
   font-weight: 800;
   padding: .5em;
+  margin-bottom: 1em;
 }
 
 form input.submitBtn:hover {
@@ -273,7 +296,7 @@ form input.submitBtn:hover {
 }
 
 /* Thank you page */
-#thanks h1, #construction h1{
+#thanks h1, #wireframes h1{
   padding: 0;
 }
 /* Gallery styles */
@@ -365,9 +388,9 @@ aside a{
   text-decoration: none;
 }
 
-
 aside li:hover{
-  background-color: #ea7317ff;
+  background-color: #fff;
+  box-shadow: inset 0px 0px 0px 2px #000;
 }
 
 aside li.townName{
@@ -375,4 +398,5 @@ aside li.townName{
   color: #fff;
   font-family: 'Bree Serif', Cambria, serif;
   font-size: 1.25em;
+  border: none;
 }

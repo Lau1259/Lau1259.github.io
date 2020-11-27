@@ -12,7 +12,7 @@
   <link rel="stylesheet" href="css/large.css" media="(min-width: 35em")>
 </head>
 
-<body onload="main(), townData('id=5604473'), townInfo(['Preston'])">
+<body onload="main(), doBanner(), townData('id=5604473'), townInfo(['Preston'])">
   <div id="banner" class="hidden">
     <h2>Saturday = Preston Pancakes in the Park!</h2>
     <p>9:00 a.m. Saturday at the city park pavilion.</p>
@@ -30,7 +30,7 @@
     <nav id="primaryNav" class="hidden">
       <ul>
         <li><a class="nav-link" href="index.html">Home</a></li>
-        <li><a class="nav-link" href="preston.html">Preston</a></li>
+        <li class="active"><a class="nav-link" href="preston.html">Preston</a></li>
         <li><a class="nav-link" href="sodasprings.html">Soda Springs</a></li>
         <li><a class="nav-link" href="fishhaven.html">Fish Haven</a></li>
         <li><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
@@ -43,10 +43,10 @@
     <h1>Preston, Idaho</h1>
     <div class="hero">
       <picture>
-        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/hero-64rem.jpg">
-        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-35rem.jpg">
-        <!-- <source media="(max-width: 35rem)" srcset="images/loading.jpg" data-srcset="images/hero-default.jpg"> -->
-        <img src="hero.jpg" data-src="images/hero-default.jpg" alt="Sundown from a forest.">
+        <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/preston_64rem.jpg">
+        <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/preston_35rem.jpg">
+        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/preston_default.jpg">
+        <img src="hero.jpg" alt="Sundown from a forest.">
       </picture>
       <div class="hero-text">
         <h2>Weather Summary</h2>
@@ -102,7 +102,7 @@
       <article>
         <h2>Christmas in the Park</h2>
         <div class="content clearfix">
-          <img src="images/loading.jpg" data-src="images/xmas_park.jpg" alt="Image placeholder">
+          <img src="images/loading.jpg" data-src="images/xmas_park.jpg" alt="Christmas trees and decorated buildings.">
           <p>Christmas is just around the corner and we want your family to have the best holiday season. This year we will host Santa Claus himself everyday from December 1st until christmas. Also, make sure try a cup of hot cocoa while you're there. This year, our annual hot cocoa contest will be judged by you, so make sure to try a cup and vote for the best online.</p>
         </div>
       </article>
@@ -120,9 +120,13 @@
       <p><a href="#">&#128231; Weather Cues</a></p>
       <p><a href="#"> &#128241; 123 456-7891 </a></p>
     </div>
-    <img class="footer-map" src="images/loading.jpg" alt="Map placeholder">
+    <div class="footer-map">
+    <img src="images/loading.jpg" id="town-map" alt="Map placeholder">
+    </div>
     <div class="footer-bar">
-      <div id="date" class="footer-bar">Today is </div>
+      <p id="date">Today is </p>
+      <p class="footer-text">&copy;2020 created by Lautaro Cuevas | <span id="lastUpdate">Last updated: dd//mm/yyyy</span> |</p>
+      <p class="footer-text"><a href="home-wireframes.html">WeatherCues Home Wireframes</a></p>
     </div>
   </footer>
   <!-- Scripts -->

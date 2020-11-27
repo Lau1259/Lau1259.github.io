@@ -66,13 +66,13 @@
     background: rgba(0, 0, 0, 0.65);
     border-top-left-radius: 2em;
     border-top-right-radius: 2em;
-    margin-top: 1em;
     color: #ffffff;
     padding: 0 5vw;
     justify-self: center;
     align-self: flex-end;
     font-size: 16pt;
     min-width: 350px;
+    transition: .5s;
   }
 
   .hero-text h2 {
@@ -91,8 +91,23 @@
     line-height: 2em;
   }
 
-  .five-day figcaption p{
+  .five-day figcaption p {
     font-size: 1em;
+  }
+
+  article{
+    padding: 1em 3em;
+  }
+
+  .clearfix p {
+    float: left;
+    width: 60%;
+    padding-top: 2.5em;
+  }
+
+  .clearfix img {
+    float: right;
+    width: 35%;
   }
 
   section {
@@ -103,20 +118,24 @@
     padding-top: 1em;
     font-size: 2vh;
   }
- /* Gallery Styles */
+
+  /* Gallery Styles */
   .img-container {
     grid-template-columns: 1fr 1fr 1fr;
   }
-/* Hover only on large view */
+
+  /* Hover only on large view */
   .img-box:hover {
     box-shadow: .15em .1em .85em;
   }
+
   /* Home Page Towns Styles */
-  .towns{
+  .towns {
     display: flex;
   }
 
-  .towns article, .towns article:nth-child(even){
+  .towns article,
+  .towns article:nth-child(even) {
     max-width: 33.33%;
     flex-direction: column;
   }

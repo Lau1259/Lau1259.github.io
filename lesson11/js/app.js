@@ -1,5 +1,4 @@
 function main() {
-  doBanner();
   getDate();
 }
 
@@ -132,4 +131,9 @@ if ('IntersectionObserver' in window) {
   heroImages.forEach((img) => {
     loadHero(img);
   });
+}
+
+// Range Adjustment
+function adjustRating(rating) {
+  document.getElementById("s-val").innerHTML = rating;
 }

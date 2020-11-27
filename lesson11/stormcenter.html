@@ -30,9 +30,9 @@
       <ul>
         <li><a class="nav-link" href="index.html">Home</a></li>
         <li><a class="nav-link" href="preston.html">Preston</a></li>
-        <li><a class="nav-link" href="construction.html">Soda Springs</a></li>
-        <li><a class="nav-link" href="construction.html">Fish Haven</a></li>
-        <li><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
+        <li><a class="nav-link" href="sodasprings.html">Soda Springs</a></li>
+        <li><a class="nav-link" href="fishhaven.html">Fish Haven</a></li>
+        <li class="active"><a class="nav-link" href="stormcenter.html">Storm Center</a></li>
         <li><a class="nav-link" href="gallery.html">Gallery</a></li>
       </ul>
     </nav>
@@ -61,8 +61,8 @@
           <option value="Tornado"></option>
         </datalist>
 
-        <label>Storm Severity &nbsp;<span id="s-val">5</span> <input type="range" name="severity" min="1" max="10" step="1" value="5" id="s-range"
-            oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <label>Storm Severity &nbsp;<span id="s-val">5</span> <input type="range" name="severity" min="1" max="10"
+            step="1" value="5" id="s-range" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
         </label>
 
         <label>Storm Region
@@ -74,9 +74,9 @@
           </select></label>
 
         <div>User in-danger level</div>
-          <label class="sbs"><input type="radio" name="danger"> Yes</label>
-          <label class="sbs"><input type="radio" name="danger"> Maybe</label>
-          <label class="sbs"><input type="radio" name="danger"> No</label>
+        <label class="sbs"><input type="radio" name="danger"> Yes</label>
+        <label class="sbs"><input type="radio" name="danger"> Maybe</label>
+        <label class="sbs"><input type="radio" name="danger"> No</label>
 
 
         <label>Additional information or comments
@@ -89,13 +89,15 @@
   </main>
   <footer>
     <div class="contact-information">
-      <h2>Contact Information</h2>
+      <h3>Contact Information</h3>
       <p><a href="#">&#128231; Weather Cues</a></p>
       <p><a href="#"> &#128241; 123 456-7891 </a></p>
     </div>
     <img class="footer-map" src="images/map.jpg" alt="Map placeholder">
     <div class="footer-bar">
-      <div id="date" class="footer-bar">Today is </div>
+      <p id="date">Today is </p>
+      <p class="footer-text">&copy;2020 created by Lautaro Cuevas | <span id="lastUpdate">Last updated: dd//mm/yyyy</span> |</p>
+      <p class="footer-text"><a href="home-wireframes.html">WeatherCues Home Wireframes</a></p>
     </div>
   </footer>
   <!-- Scripts -->
