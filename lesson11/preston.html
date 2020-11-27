@@ -45,8 +45,8 @@
       <picture>
         <source media="(min-width: 64rem)" srcset="images/hero.jpg" data-srcset="images/hero-64rem.jpg">
         <source media="(min-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-35rem.jpg">
-        <source media="(max-width: 35rem)" srcset="images/hero.jpg" data-srcset="images/hero-default.jpg">
-        <img src="images/hero.jpg"  alt="Hero image placeholder">
+        <!-- <source media="(max-width: 35rem)" srcset="images/loading.jpg" data-srcset="images/hero-default.jpg"> -->
+        <img src="hero.jpg" data-src="images/hero-default.jpg" alt="Sundown from a forest.">
       </picture>
       <div class="hero-text">
         <h2>Weather Summary</h2>
@@ -102,7 +102,7 @@
       <article>
         <h2>Christmas in the Park</h2>
         <div class="content clearfix">
-          <img src="images/450x150.jpg" alt="Image placeholder">
+          <img src="images/loading.jpg" data-src="images/xmas_park.jpg" alt="Image placeholder">
           <p>Christmas is just around the corner and we want your family to have the best holiday season. This year we will host Santa Claus himself everyday from December 1st until christmas. Also, make sure try a cup of hot cocoa while you're there. This year, our annual hot cocoa contest will be judged by you, so make sure to try a cup and vote for the best online.</p>
         </div>
       </article>
@@ -120,7 +120,7 @@
       <p><a href="#">&#128231; Weather Cues</a></p>
       <p><a href="#"> &#128241; 123 456-7891 </a></p>
     </div>
-    <img class="footer-map" src="images/map.jpg" alt="Map placeholder">
+    <img class="footer-map" src="images/loading.jpg" alt="Map placeholder">
     <div class="footer-bar">
       <div id="date" class="footer-bar">Today is </div>
     </div>
@@ -129,6 +129,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
   <script src="js/webfont_loader.js"></script>
   <script src="js/towns.js" defer></script>
+  <script src="js/iobserver.js" defer></script>
   <script src="js/app.js" defer></script>
 </body>
 

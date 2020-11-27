@@ -325,10 +325,10 @@ picture img[data-src] {
   width: 100%;
 }
 
-.towns img{
+/* .towns img{
   max-width: 400px;
   margin: 0 auto;
-}
+} */
 
 aside{
   display: grid;
