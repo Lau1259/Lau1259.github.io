@@ -6,20 +6,38 @@ const loadImages = (image) => {
   };
 };
 
-if('IntersectionObserver' in window) {
+let map = document.getElementById('footer-map')
+
+const loadMap = (placeholder) => {
+  if (map.getAttribute('src') == "images/map.jpg") {
+    document.getElementById('map-container').innerHTML = map.getAttribute('data-embed')
+  }
+};
+
+if ('IntersectionObserver' in window) {
   const observer = new IntersectionObserver((items, observer) => {
     items.forEach((item) => {
-      if(item.isIntersecting) {
+      if (item.isIntersecting) {
         loadImages(item.target);
         observer.unobserve(item.target);
       }
     });
   });
+  const mapObserver = new IntersectionObserver((mapImage, mapObserver) => {
+    mapImage.forEach((placeholder) => {
+      if (placeholder.isIntersecting) {
+        loadMap(map);
+        mapObserver.unobserve(placeholder.target);
+      }
+    })
+  });
   imagesToLoad.forEach((img) => {
     observer.observe(img);
+    mapObserver.observe(map);
   });
 } else {
   imagesToLoad.forEach((img) => {
     loadImages(img);
   });
+  loadMap(map);
 }
