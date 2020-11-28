@@ -1,5 +1,6 @@
 function main() {
   getDate();
+  getLastUpdate();
 }
 
 function townData(identifier) {
@@ -18,6 +19,9 @@ function getDate() {
   let year = d.getFullYear();
   let currentDay = `Today is ${dayName[dayNum-1]}, ${day} ${months[month]} ${year} `
   document.getElementById('date').innerHTML = currentDay;
+}
+function getLastUpdate(){
+  document.getElementById('lastUpdate').innerHTML = `Last updated ${document.lastModified}`;
 }
 
 /* Functional Elements */
