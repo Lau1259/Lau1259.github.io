@@ -9,9 +9,7 @@ const loadImages = (image) => {
 let map = document.getElementById('footer-map')
 
 const loadMap = (placeholder) => {
-  if (map.getAttribute('src') == "images/map.jpg") {
     document.getElementById('map-container').innerHTML = map.getAttribute('data-embed')
-  }
 };
 
 if ('IntersectionObserver' in window) {
