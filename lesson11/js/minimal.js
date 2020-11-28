@@ -22,22 +22,3 @@ function getLastUpdate(){
 function toggleMenu() {
   document.getElementById('primaryNav').classList.toggle('hidden')
 }
-
-let map = document.getElementById('footer-map')
-const loadMap = (placeholder) => {
-    document.getElementById('map-container').innerHTML = map.getAttribute('data-embed');
-};
-
-if ('IntersectionObserver' in window) {
-    const mapObserver = new IntersectionObserver((mapImage, mapObserver) => {
-    mapImage.forEach((placeholder) => {
-      if (placeholder.isIntersecting) {
-        loadMap(map);
-        mapObserver.unobserve(placeholder.target);
-      }
-  });
-  });
-  mapObserver.observe(map);
-} else {
-  loadMap(map);
-}
