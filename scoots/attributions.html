@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Scoots provides quality rental vehicles to tourist and locals. We serve those in Cozumel and Playa del Carmen. Visit our site to learn how you can get the most from your trip with our services.">
+  <title>Scoots | Reservations</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="company">
+
+      <a class="logo-box" href="index.html">
+        <img src="svg/logo.svg" class="logo" alt="Scoots Logo">
+      </a>
+    </div>
+    <div class="weatherInfo">
+      <ul>
+        <li id="currentTemp">Temp: NA </li>
+        <li id="currentDesc">Desc: NA </li>
+        <li id="currentHum">Humidity: NA </li>
+      </ul>
+    </div>
+    <!-- Nav will slide out with an animation -->
+    <nav id="primary-nav" class="">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com">
+              <img class="social-icon" data-src="svg/facebook.svg" src="images/jpg/icon.jpg" alt="Scoots Facebook Page">
+            </a>
+          </li>
+          <li><a href="https://www.instagram.com">
+              <img class="social-icon" data-src="svg/instagram.svg" src="images/jpg/icon.jpg"
+                alt="Scoots Instagram Page">
+            </a>
+          </li>
+          <li><a href="https://www.youtube.com">
+              <img class="social-icon" data-src="svg/youtube.svg" src="images/jpg/icon.jpg"
+                alt="Scoots YouTube Channel">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2>Attributions</h2>
+    <p>Below is the sources for all of the images and APIs used for this website that are not mine. The main sources
+      external sources for this website were the Open Weather Maps API and Unsplash.com for most of the images. I also used other tools for this project that I will mention as well.</p>
+    <section>
+      <h3>Open Weather Map</h3>
+      <p>This website made use of the Open Weather Map API using the <a
+          href="https://openweathermap.org/api/one-call-api">One Call API</a>
+      </p>
+    </section>
+    <section>
+      <h3>Unsplash.com</h3>
+      <p>I made use of multiple images from this website. Below I will leave links to the original images on Unsplash.com </p>
+      <ul>
+        <li><a href="https://unsplash.com/photos/o80vJIoZPt0">2 Door Jeep</a></li>
+        <li><a href="https://unsplash.com/photos/yDekvyZ52dU">Black Jeep.</a></li>
+        <li><a href="https://unsplash.com/photos/62madc6Uw2o">ATV by the ocean.</a></li>
+        <li><a href="https://unsplash.com/photos/AV2IscSoAfc">2 Scooters</a></li>
+        <li><a href="https://unsplash.com/photos/qnvzT21ZH74">White scooter.</a></li>
+        <li><a href="https://unsplash.com/photos/nhXV1T9LVMg">2 people on scooters by the beach.</a></li>
+        <li><a href="https://unsplash.com/photos/SouFaFk9-KQ">City by the ocean.</a></li>
+        <li><a href="https://unsplash.com/photos/LRHB0TQiAeM">Kite Surfing.</a></li>
+        <li><a href="https://unsplash.com/photos/hs2076lrvKQ">Tacos on a tray.</a></li>
+        <li><a href="https://unsplash.com/photos/9SaGDLB3Cdg">Shark in coral reef.</a></li>
+        <li><a href="https://unsplash.com/photos/PiUKvqdW_iU">Coral reef.</a></li>
+        <li><a href="https://unsplash.com/photos/PiUKvqdW_iU">Snorkeling close to a turtle.</a></li>
+      </ul>
+    </section>
+    <section>
+      <h3>Other Tools</h3>
+      <ul>
+        <li>I used <a href="https://jakearchibald.github.io/svgomg/">SVGOMG</a> to help decrease the size of the svg files I created</li>
+        <li>I used <a href="https://pixlr.com/x/">Pixlr</a> to crop and save images at different resolutions.</li>
+        <li>I am using <a href="https://necolas.github.io/normalize.css/">Normalize.css</a> to ensure that my website is styled the same way in different browsers.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <!-- Will replace the text with Icons -->
+      <ul>
+        <li>&#x1F4F1;<a href="#"> 123-456-789</a></li>
+        <li>&#128231;<a href="#">info@scoots.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-attribution">
+      <h2>Attributions</h2>
+      <ul>
+        <li>&copy;2020 Lautaro Cuevas</li>
+        <li class="button footer-link"><a href="attributions.html">Attributions</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/minimal.js"></script>
+  <script src="js/confirmation.js"></script>
+</body>
+
+</html>
