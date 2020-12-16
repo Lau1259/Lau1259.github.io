@@ -212,7 +212,9 @@ nav a {
 .hero-container {
   display: -ms-grid;
   display: grid;
+  /* -ms-grid-columns: (1fr)[3]; */
   grid-template-columns: repeat(3, 1fr);
+  /* -ms-grid-rows: (1fr)[5]; */
   grid-template-rows: repeat(5, 1fr);
   height: calc(100vw*(9/16));
 }

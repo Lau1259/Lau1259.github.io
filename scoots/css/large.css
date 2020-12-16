@@ -30,7 +30,7 @@
     color: #000000;
   }
   form legend {
-    color: #278EC3;
+    color: #000000;
     font-family: "Skranji";
   }
   .agreement {
@@ -64,6 +64,9 @@
   header,
   footer {
     font-size: .65rem;
+  }
+  footer a {
+    color: #000000;
   }
   footer h2 {
     font-size: 1rem;
