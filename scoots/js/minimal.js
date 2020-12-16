@@ -116,3 +116,6 @@ if ('IntersectionObserver' in window) {
     loadImages(img);
   });
 }
+
+//Last Update Date
+  document.getElementById('lastUpdate').innerHTML = `Last updated ${document.lastModified}`;
