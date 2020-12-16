@@ -37,7 +37,7 @@ nav li a {
 }
 
 form legend {
-  color: #278cc1;
+  color: #000000;
   font-family: "Skranji";
 }
 
@@ -79,6 +79,10 @@ form legend {
 header,
 footer {
   font-size: .65rem;
+}
+
+footer a {
+  color: #000000;
 }
 
 footer h2 {
@@ -208,9 +212,7 @@ nav a {
 .hero-container {
   display: -ms-grid;
   display: grid;
-  /* -ms-grid-columns: (1fr)[3]; */
   grid-template-columns: repeat(3, 1fr);
-  /* -ms-grid-rows: (1fr)[5]; */
   grid-template-rows: repeat(5, 1fr);
   height: calc(100vw*(9/16));
 }
