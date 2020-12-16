@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Scoots provides quality rental vehicles to tourist and locals. We serve those in Cozumel and Playa del Carmen. Visit our site to learn how you can get the most from your trip with our services.">
+  <title>Scoots | Reservations</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="company">
+
+      <a class="logo-box" href="index.html">
+        <img src="svg/logo.svg" class="logo" alt="Scoots Logo">
+      </a>
+    </div>
+    <div class="weatherInfo">
+      <ul>
+        <li id="currentTemp">Temp: NA </li>
+        <li id="currentDesc">Desc: NA </li>
+        <li id="currentHum">Humidity: NA </li>
+      </ul>
+    </div>
+    <!-- Nav will slide out with an animation -->
+    <nav id="primary-nav" class="">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com">
+              <img class="social-icon" data-src="svg/facebook.svg" src="images/jpg/icon.jpg" alt="Scoots Facebook Page">
+            </a>
+          </li>
+          <li><a href="https://www.instagram.com">
+              <img class="social-icon" data-src="svg/instagram.svg" src="images/jpg/icon.jpg"
+                alt="Scoots Instagram Page">
+            </a>
+          </li>
+          <li><a href="https://www.youtube.com">
+              <img class="social-icon" data-src="svg/youtube.svg" src="images/jpg/icon.jpg"
+                alt="Scoots YouTube Channel">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <h2 class="success">Reservation Successful!</h2>
+    <section class="confirmation-summary">
+      <ul>
+        <li>Reservation Summary:</li>
+        <li id="firstName">First Name: </li>
+        <li id="lastName">Last Name: </li>
+        <li id="country">Country of residence: </li>
+        <li id="email">Email: </li>
+        <li id="phone">Phone Number: </li>
+        <li id="cruise">Cruise Line: </li>
+        <li id="rentalType">Rental type: </li>
+        <li id="rentalStart">Rental Start Date: </li>
+        <li id="rentalEnd">Rental End Date: </li>
+        <li id="passengers">Passengers: </li>
+        <li id="vehicle">Vehicle: </li>
+        <li id="vehicleAmount">Amount of vehicles: </li>
+        <li id="drop">Dropoff: </li>
+        <li id="dropLoc">Dropoff Location: </li>
+        <li id="extra">Extra Information: </li>
+        <li id="confirmation">Confirmation Code: </li>
+        <li>Please store your confirmation code in a safe place. It will be used to verify your reservation once you get to Cozumel.</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <!-- Will replace the text with Icons -->
+      <ul>
+        <li>&#x1F4F1;<a href="#"> 123-456-789</a></li>
+        <li>&#128231;<a href="#">info@scoots.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-attribution">
+      <h2>Attributions</h2>
+      <ul>
+        <li>&copy;2020 Lautaro Cuevas</li>
+        <li class="button footer-link"><a href="attributions.html">Attributions</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/minimal.js"></script>
+  <script src="js/confirmation.js"></script>
+</body>
+
+</html>

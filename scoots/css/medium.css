@@ -1,0 +1,178 @@
+* {
+  font-family: "Laila";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Skranji";
+  margin: 0;
+}
+
+nav li a {
+  color: #000000;
+  font-family: "Skranji";
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.card ul {
+  font-family: "Laila";
+  font-size: 1.25em;
+  text-align: center;
+  color: #ffffff;
+}
+
+.forecast {
+  font-size: .5em;
+}
+
+.forecast ul {
+  color: #000000;
+}
+
+form legend {
+  color: #278EC3;
+  font-family: "Skranji";
+}
+
+.agreement {
+  color: #ffffff;
+  text-align: center;
+}
+
+.rental-option-text li {
+  color: #000000;
+}
+
+.rental-sub {
+  font-size: 1em;
+  font-weight: 700;
+}
+
+.page-title {
+  text-align: center;
+  margin-bottom: 1em;
+}
+
+.button {
+  font-family: "Skranji";
+  line-height: 2em;
+}
+
+.button a,
+.button span {
+  color: white;
+  text-decoration: none;
+}
+
+.button a:hover,
+.button span:hover {
+  color: #000000;
+}
+
+header,
+footer {
+  font-size: .65rem;
+}
+
+footer h2 {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 35rem) {
+  * {
+    font-size: 1.05em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  footer li {
+    font-size: 1.5em;
+  }
+  .hero-container .button {
+    font-size: 4vmin;
+  }
+  .weatherInfo {
+    font-size: 1.5em;
+  }
+  .weatherInfo ul {
+    width: auto;
+  }
+  .flex-row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .flex-row img {
+    padding: 1em;
+  }
+  .activity {
+    padding: 0.25em 0;
+  }
+  .activity .activity-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .activity .activity-content p {
+    margin: 0;
+  }
+  .activity img {
+    max-width: 40%;
+    height: 100%;
+    padding-right: 2em;
+    float: left;
+    display: block;
+  }
+  .rental-summary {
+    clear: both;
+  }
+  .rental-summary h2 {
+    width: 100%;
+    text-align: left;
+  }
+  .rental-summary .rental-data {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .rental-summary img {
+    width: 40%;
+    padding-right: 2em;
+    -webkit-transition: 1s;
+    transition: 1s;
+  }
+  .rental-summary p {
+    float: right;
+    width: 100%;
+    font-size: 1.25em;
+  }
+  .button {
+    font-size: 1em;
+  }
+}
+/*# sourceMappingURL=medium.css.map */

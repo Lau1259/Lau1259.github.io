@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Scoots provides quality rental vehicles to tourist and locals. We serve those in Cozumel and Playa del Carmen. Visit our site to learn how you can get the most from your trip with our services.">
+  <title>Scoots | Tours</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <!-- <button onclick="toggleMenu()" class="hamburger">&#9776;</button> -->
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="company">
+
+      <a class="logo-box" href="index.html">
+        <img src="svg/logo.svg" class="logo" alt="Scoots Logo">
+      </a>
+    </div>
+    <div class="weatherInfo">
+      <ul>
+        <li id="currentTemp">Temp: NA </li>
+        <li id="currentDesc">Desc: NA </li>
+        <li id="currentHum">Humidity: NA </li>
+      </ul>
+    </div>
+    <!-- Nav will slide out with an animation -->
+    <nav id="primary-nav" class="">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li class="active"><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com">
+              <img class="social-icon" data-src="svg/facebook.svg" src="images/jpg/icon.jpg" alt="Scoots Facebook Page">
+            </a>
+          </li>
+          <li><a href="https://www.instagram.com">
+              <img class="social-icon" data-src="svg/instagram.svg" src="images/jpg/icon.jpg"
+                alt="Scoots Instagram Page">
+            </a>
+          </li>
+          <li><a href="https://www.youtube.com">
+              <img class="social-icon" data-src="svg/youtube.svg" src="images/jpg/icon.jpg"
+                alt="Scoots YouTube Channel">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <div class="hero-container">
+    <picture class="hero-image">
+      <source media="(min-width:52rem)" srcset="images/jpg/coralReef-lg.jpg">
+      <source media="(min-width:35rem)" srcset="images/jpg/coralReef-md.jpg">
+      <source media="(max-width:35rem)" srcset="images/jpg/coralReef-sm.jpg">
+      <img src="images/jpg/loading.jpg" alt="Coral reef.">
+    </picture>
+  </div>
+  <main>
+    <section>
+      <h2 class="page-title">Are you ready to explore Cozumel with us?</h2>
+      <article class="activity">
+        <h3 class="activity-title">Kite Surfing</h3>
+        <div class="activity-content">
+          <img src="images/jpg/loading.jpg" data-src="images/jpg/kiteSurfing.jpg" alt="">
+          <p>If you're looking for exciting adventures on the open sea, you're in the right spot. Cozumel offers a great opportunity to learn and practice Kite Surfing. Locals have spent years mastering this sport and are eager to help you learn or enjoy this sport while you're here. </p>
+        </div>
+      </article>
+      <article class="activity">
+        <h3 class="activity-title">Snorkeling</h3>
+        <div class="activity-content">
+          <img src="images/jpg/loading.jpg" data-src="images/jpg/snorkeling.jpg" alt="">
+          <p>The adventures in Cozumel aren't limited to the island. Cozumel offers tourists the opportunity to explore the ocean. Snorkeling expeditions are conducted everyday and allow you to see a different part of Cozumel. Don't miss out on this opportunity to explore Cozumel in a special way.</p>
+        </div>
+      </article>
+      <article class="activity">
+        <h3 class="activity-title">Arrecife National Park</h3>
+        <div class="activity-content">
+          <img src="images/jpg/loading.jpg" data-src="images/jpg/shark.jpg" alt="">
+          <p>If you're here to enjoy outdoor activities don't leave Arrecife National Park out of your plans. Arrecife national park is the second largest reef in the world! It is also home to various species of sea creatures including giant manta rays. </p>
+        </div>
+      </article>
+      <article class="activity">
+        <h3 class="activity-title">Mexican Cuisine</h3>
+        <div class="activity-content">
+          <img src="images/jpg/loading.jpg" data-src="images/jpg/tacos.jpg" alt="">
+          <p>If you're here for the Mexican culture don't miss out on the local food. Cozumel is full of restaurants that serve the best dishes in Mexico. This includes well known foods like tacos and extends to others local favorites such as barbacoa, chiles en nogada, and mexican style tortas.</p>
+        </div>
+      </article>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <!-- Will replace the text with Icons -->
+      <ul>
+        <li>&#x1F4F1;<a href="#"> 123-456-789</a></li>
+        <li>&#128231;<a href="#">info@scoots.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-attribution">
+      <h2>Attributions</h2>
+      <ul>
+        <li>&copy;2020 Lautaro Cuevas</li>
+        <li class="button footer-link"><a href="attributions.html">Attributions</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/minimal.js"></script>
+</body>
+
+</html>

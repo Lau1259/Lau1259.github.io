@@ -2,3 +2,12 @@ lesson10/speedTest/speedTests_11-18-20.png
 lesson10/speedTest/speedTests_11-18-20(1).png
 lesson10/speedTest/connor.png
 lesson11/speedTests/
+scoots/documentation
+scoots/fonts
+scoots/css/partials
+scoots/js/webp.js
+scoots/images/originals
+scoots/css/scss
+*.css.map
+*.sass.map
+*.scss.map

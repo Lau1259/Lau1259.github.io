@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Scoots provides quality rental vehicles to tourist and locals. We serve those in Cozumel and Playa del Carmen. Visit our site to learn how you can get the most from your trip with our services.">
+  <link rel="icon" type="image/svg+xml" href="svg/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <title>Scoots | Home</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/medium.css">
+  <link rel="stylesheet" href="css/large.css">
+</head>
+
+<body>
+  <header>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div class="line"></div>
+      <div class="line"></div>
+      <div class="line"></div>
+    </div>
+    <div class="company">
+
+      <a class="logo-box" href="index.html">
+        <img src="svg/logo.svg" class="logo" alt="Scoots Logo">
+      </a>
+    </div>
+    <div class="weatherInfo">
+      <ul>
+        <li id="currentTemp">Temp: NA </li>
+        <li id="currentDesc">Desc: NA </li>
+        <li id="currentHum">Humidity: NA </li>
+      </ul>
+    </div>
+    <!-- Nav will slide out with an animation -->
+    <nav id="primary-nav" class="">
+      <ul>
+        <li class="active"><a href="index.html">Home</a></li>
+        <li><a href="rentals.html">Rentals</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-socials">
+        <h2>Follow us</h2>
+        <ul>
+          <li><a href="https://www.facebook.com">
+              <img class="social-icon" data-src="svg/facebook.svg" src="images/jpg/icon.jpg" alt="Scoots Facebook Page">
+            </a>
+          </li>
+          <li><a href="https://www.instagram.com">
+              <img class="social-icon" data-src="svg/instagram.svg" src="images/jpg/icon.jpg"
+                alt="Scoots Instagram Page">
+            </a>
+          </li>
+          <li><a href="https://www.youtube.com">
+              <img class="social-icon" data-src="svg/youtube.svg" src="images/jpg/icon.jpg"
+                alt="Scoots YouTube Channel">
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <div class="hero-container">
+    <picture class="hero-image">
+      <source media="(min-width:52rem)" srcset="images/jpg/home-lg.jpg">
+      <source media="(min-width:35rem)" srcset="images/jpg/home-md.jpg">
+      <source media="(max-width:35rem)" srcset="images/jpg/home-sm.jpg">
+      <img src="images/jpg/loading.jpg" alt="Cozumel sea-front.">
+    </picture>
+    <div class="button">
+      <a href="rentals.html">Ready to explore?</a>
+    </div>
+  </div>
+
+  <main>
+    <div id="alert" class="hidden">
+      <!-- If there area any weather alerts, they will be displayed here. -->
+    </div>
+
+    <div class="forecast-container" id="threeDay">
+      <!-- Filled in with .JSON -->
+    </div>
+
+    <div class="main-content">
+      <section class="rental-summary">
+        <h2>Where can I go?</h2>
+        <div class="rental-data">
+          <img src="images/jpg/loading.jpg" data-src="images/jpg/shark.jpg" alt="Coral reef.">
+          <div class="flex-column">
+            <p>Cozumel is the place for you, whether you're looking for deep sea adventures, a relaxin cruise, or great
+              Mexican cuisine by the beach. We're sure there's something for everyone, including the little ones. So,
+              are
+              you ready to explore?</p>
+            <div class="button">
+              <a href="tours.html">Explore Cozumel</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="rental-summary">
+        <h2>How do I get there?</h2>
+        <div class="rental-data">
+          <img src="images/jpg/loading.jpg" data-src="images/jpg/jeep_2door.jpg" alt="">
+          <div class="flex-column">
+            <p>Cozumel has much to offer and the best experiences require being able to travel freely. We offer rental
+              scooters, ATVs, and Jeeps that help you get to the best places around. Reserve early to get the best
+              prices
+              and
+              your choice of vehicle.</p>
+            <div class="button">
+              <a href="rentals.html">View Rentals</a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="footer-contact">
+      <h2>Contact</h2>
+      <!-- Will replace the text with Icons -->
+      <ul>
+        <li>&#x1F4F1;<a href="#"> 123-456-789</a></li>
+        <li>&#128231;<a href="#">info@scoots.com</a></li>
+      </ul>
+    </div>
+    <div class="footer-attribution">
+      <h2>Attributions</h2>
+      <ul>
+        <li>&copy;2020 Lautaro Cuevas</li>
+        <li class="button footer-link"><a href="attributions.html">Attributions</a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- Scripts -->
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script src="js/minimal.js"></script>
+</body>
+
+</html>
